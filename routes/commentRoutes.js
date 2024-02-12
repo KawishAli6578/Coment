@@ -3,7 +3,7 @@ const { getAllComment, createNewComment } = require("../controller/commentContro
 
 const router = express.Router();
 
-router.route("/posts/:id/comments").get(getAllComment);
-router.route("/posts/:id/comments").post(createNewComment);
+router.route("/get/comments/:id").get(getAllComment);
+router.route("/create/comments/:id").post(createNewComment);
 
 module.exports = router;
